@@ -1,11 +1,13 @@
-list_of_packages = c("shiny","shinyjs","shinythemes","crayon","ggplot2",
+packages = c("shiny","shinyjs","shinythemes","crayon","ggplot2",
                      "ggridges","dplyr","ggfortify","ggpubr",
                      "extrafont","data.table","stringr","CMplot",
                      "MASS","zip","tidyr","tidyverse","RColorBrewer")
-
-lapply(list_of_packages, 
-       function(x) if(!require(x,character.only = TRUE)) install.packages(x))
-
+package.check <- lapply(packages, FUN = function(x) {
+  if (!require(x, character.only = TRUE)) {
+    install.packages(x, dependencies = TRUE)
+    library(x, character.only = TRUE)
+  }
+})
 
 library(shiny)
 library(shinyjs)
