@@ -24,10 +24,10 @@ install.packages("shiny")
 The application requires few more r packages to be installed and they have all been added in the main program. So it will automatically be installed when you run the program. Hence, the user needs to be connected to the internet when they run the program for first time.
 
 ## Step 2: Downloading and running the application
-The Et-GWAS windows version is present in the GitHub as a separate repository. And it can be downloaded and run through the following command
+The Et-GWAS windows version is present in the GitHub as a separate repository. And it can be downloaded and run in the RStudio, through the following command
 
 ```
-shiny::runGitHub(“Et-GWAS_Windows”, “IRRISouthAsiaHub”)”  in RStudio.
+shiny::runGitHub("Et-GWAS_Windows", "IRRISouthAsiaHub")
 ```
 
 # Webtool and GUI for large Marker data
