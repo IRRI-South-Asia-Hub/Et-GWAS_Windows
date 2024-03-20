@@ -14,7 +14,21 @@ Figure 1 The schematic representation of the Et-GWAS pipeline: The workflow cons
 # Graphical user interphase of Et-GWAS for Windows
 The Et-GWAS application is user-friendly and requires no prior knowledge of R programming. It operates through a graphical user interface (GUI) that guides users through the process. To begin, users input the desired bulk size, trait name, and phenotypic file on the starting page of the application. Comprehensive instructions regarding data formatting can be found in the documentation below. Since the webserver runs with very low density SNP set, the users can upgrate to the "Functional SNP set" for the analysis. This SNP set contains ~30K SNPs from exonic region with effects on the protein structure.
 
-Users can run the app locally through the code “shiny::runGitHub(“Et-GWAS_Windows”, “IRRISouthAsiaHub”)”  in RStudio.
+Users can run the app locally through two step process:
+## Step 1: Installation
+The GUI was prepared using Shiny,an open source r package (https://www.rstudio.com/products/shiny/). And so the user needs to install the r package "shiny" in their RStrudio to start the program.
+
+```
+install.packages("shiny")
+```
+The application requires few more r packages to be installed and they have all been added in the main program. So it will automatically be installed when you run the program. Hence, the user needs to be connected to the internet when they run the program for first time.
+
+## Step 2: Downloading and running the application
+The Et-GWAS windows version is present in the GitHub as a separate repository. And it can be downloaded and run through the following command
+
+```
+shiny::runGitHub(“Et-GWAS_Windows”, “IRRISouthAsiaHub”)”  in RStudio.
+```
 
 # Webtool and GUI for large Marker data
 Full details are given in the repository
